@@ -13,7 +13,6 @@ function getProductNo(partCode) {
     let productNo = partCode.substring(colonPos + dashPos);
     
     console.log(partCode);
-    
 }
 
 
@@ -23,7 +22,6 @@ function getProductSize(partCode) {
 
     console.log(partCode);
 }
-
 
 getProductSupplier("ACME:123-L");
 getProductNo("DI:12345-M");
