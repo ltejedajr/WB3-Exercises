@@ -1,24 +1,48 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Date Difference Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
 
-<body>
+<style>
+
+.box{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+   
+label {
+    display: inline;
+    width: 1px;
+}
+   
+</style>
+   
+  <body>
+    <header class="container">
+        <h1>Date Constructor</h1>
+    </header>
 
     <main class="container">
-        
-        <div>
+        <div class="box" style="text-align: center;">
+            <label class="form-label" for="inputDate">Date: </label><br>
+            <input class="form" id="inputDate" type="date"><br><br>
+
             
-            <label class="form" for="inputDate" style="font-size:medium;">Date</label>
-            <input class="form" id="inputDate" type="date">
+            <input class="btn btn-white" style="border-color: black;" type="button" id="submitBtn" value="Submit">
             
-            <input class="btn btn-primary" type="button" id="justABtn" value="Go">
             
-            <label class="form-label" for="outputDate">Output</label> 
-            <input class="form" id="outputDate" readonly type="text">
-            
+           <p> <h6 id="outputH6"></h6></p>
         </div>
     </main>
-    <script src="scripts/index.js"></script>
-    
-</body>
 
+
+
+    <script src="scripts/index.js"></script>
+  </body>
 </html>

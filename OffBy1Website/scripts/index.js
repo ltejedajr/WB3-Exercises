@@ -2,17 +2,18 @@
 
 window.onload = init;
 
-function init() {
-    const justABtn = document.getElementById("justABtn");
-    justABtn.onclick = justABtnClicked;
-}
+    function init() {
+        const submitBtn = document.getElementById("submitBtn");
+        submitBtn.onclick = submitBtnClicked;
+    }
 
-function justABtnClicked(){
-    const inputDate = document.getElementById("inputDate");
-    let dateValue = inputDate.value;
+    function submitBtnClicked() {
+        const inputDate = document.getElementById("inputDate");
+        let dateValue = inputDate.value;
+        
+        let message = "Today's date is " + dateValue;
+
+        const outputH6 = document.getElementById("outputH6");
+        outputH6.innerHTML = message.toString();
+    }
    
-    const outputDate = document.getElementById("outputDate");
-    outputDate.value = dateValue;
-
-    console.log(outputDate.value.toString());
-}
