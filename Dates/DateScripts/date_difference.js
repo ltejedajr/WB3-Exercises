@@ -31,16 +31,16 @@
 
 // console.log("The number of days between dates is " + numDays);
 
-let startDate = new Date ("July 11, 2022");
-let endDate = new Date ("November 11, 2022");
+// let startDate = new Date ("July 11, 2022");
+// let endDate = new Date ("November 11, 2022");
 
-let msecPerDay = 1000 * 60 * 60 * 24;
-let elapsedMilliseconds = endDate.getTime() - startDate.getTime();
+// let msecPerDay = 1000 * 60 * 60 * 24;
+// let elapsedMilliseconds = endDate.getTime() - startDate.getTime();
 
-let dayDiff = elapsedMilliseconds / msecPerDay;
-let numDays = Math.round(dayDiff);
+// let dayDiff = elapsedMilliseconds / msecPerDay;
+// let numDays = Math.round(dayDiff);
 
-console.log("The number of days between dates is " + numDays + ".");
+// console.log("The number of days between dates is " + numDays + ".");
 
 
 
